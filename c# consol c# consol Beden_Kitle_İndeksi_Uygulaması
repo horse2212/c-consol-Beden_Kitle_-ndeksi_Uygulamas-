@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Beden_Kitle_İndeksi_Uygulaması
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("kilonuzu giriniz");
+            int kilo = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("boyunuzu giriniz");
+            double boy = Convert.ToDouble(Console.ReadLine());
+
+            double nopt = kilo / (boy * boy);
+
+            if(nopt<18)
+            {
+                Console.WriteLine("zayıfsın");
+                Console.ReadLine();
+            }
+
+            else if(nopt>18 && nopt<25)
+            {
+                Console.WriteLine("normalsiniz");
+                Console.ReadLine();
+            }
+
+            else if(nopt>25)
+            {
+                Console.WriteLine("obezsiniz");
+                Console.ReadLine();
+            }
+        }
+    }
+}
